@@ -93,9 +93,6 @@
 
 
 <main>
-    <pre>
-        <?php var_dump($data); ?>
-    </pre>
     <section>
         <h2>La próxima película de Marvel</h2>
         <img 
@@ -109,11 +106,16 @@
         <p>La próxima película es: <?= $data["following_production"]["title"];?></p>
     </hgroup>
 
+    <pre>
+        <?php var_dump($data); ?>
+    </pre>
+
 </main>
 
 
 <style>
     body {
+        background-color:whitesmoke;
         display: grid;
         place-content:center;
     }
