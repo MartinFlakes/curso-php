@@ -68,31 +68,31 @@
 </head>
 
 
-<h1><?= SALUDO?></h1>
-
-<h2>
-    <?= $output ?>
-</h2>
-<h2>
-    <?= $outputAge ?>
-</h2>
-
-<?php if ($is_dev) : ?>
-    <h2>Desarrollador</h2>
-<?php elseif ($is_dev) : ?>
-    <h2>Usuario</h2>
-<?php else : ?>
-    <h2>Usuario</h2>
-<?php endif; ?>
-
-<ul>
-    <?php foreach ($languages as $key => $language) : ?>
-        <li><?= $key . " " . $language ?></li>
-    <?php endforeach; ?>
-</ul>
-
-
 <main>
+    <h1><?= SALUDO?></h1>
+    
+    <h2>
+        <?= $output ?>
+    </h2>
+    <h2>
+        <?= $outputAge ?>
+    </h2>
+    
+    <?php if ($is_dev) : ?>
+        <h2>Desarrollador</h2>
+    <?php elseif ($is_dev) : ?>
+        <h2>Usuario</h2>
+    <?php else : ?>
+        <h2>Usuario</h2>
+    <?php endif; ?>
+    
+    <ul>
+        <?php foreach ($languages as $key => $language) : ?>
+            <li><?= $key . " " . $language ?></li>
+        <?php endforeach; ?>
+    </ul>
+
+
     <section>
         <h2>La próxima película de Marvel</h2>
         <img 
@@ -107,6 +107,8 @@
     </hgroup>
 
     <pre>
+        <h2>Data en crudo</h2>
+        <h4>Ignorar</h4>
         <?php var_dump($data); ?>
     </pre>
 
@@ -117,7 +119,6 @@
     body {
         background-color:whitesmoke;
         display: grid;
-        place-content:center;
     }
     section {
         display: grid;
