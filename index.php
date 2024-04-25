@@ -49,14 +49,16 @@
 
     //Proyecto pelicula Marvel
     const API_URL = "https://whenisthenextmcufilm.com/api";
-    # Inicializar una nueva sesión de cURL; ch = curl handle
-    $ch = curl_init(API_URL);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $result = curl_exec($ch);
+    // # Inicializar una nueva sesión de cURL; ch = curl handle
+    // $ch = curl_init(API_URL);
+    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // $result = curl_exec($ch);
+    // $data = json_decode($result, true);
+    // curl_close($ch);
+
+    //Método solo para GET
+    $result = file_get_contents(API_URL);
     $data = json_decode($result, true);
-    curl_close($ch);
-
-
 ?>
 
 
