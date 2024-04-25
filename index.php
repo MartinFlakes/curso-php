@@ -119,6 +119,7 @@
     body {
         background-color:whitesmoke;
         display: grid;
+        /* place-content: center; */
     }
     section {
         display: grid;
