@@ -12,6 +12,7 @@
     // curl_close($ch);
 
     function render_template (string $template, array $data = []){
+        $data = $data;
         require "templates/$template.php";
     }
 
