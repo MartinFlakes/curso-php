@@ -1,6 +1,6 @@
 <?php
     //Variables de entrada
-	$name = "Martin";
+	$name = "MartinFlakes";
     $is_dev = true;
     $age = 20;
     #$is_adult = $age >= 18;
