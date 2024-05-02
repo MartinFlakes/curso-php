@@ -7,7 +7,7 @@ $untilMessage = get_until_message($data["days_until"]);
 ?>
 
 
-<?= render_template('head', $data);?>
+<?php render_template('head', $data);?>
 
 <?php require 'sections/main.php';?>
 

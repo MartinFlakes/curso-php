@@ -1,5 +1,5 @@
 <?php
-    // //Para que sea estricto con los tipos
+    //Para que sea estricto con los tipos
     // declare(strict_types=1);
 
     //Proyecto pelicula Marvel
@@ -11,8 +11,9 @@
     // $data = json_decode($result, true);
     // curl_close($ch);
 
-    function render_template (string $template, array $data = []){
-        $data = $data;
+    function render_template (string $template, array $data = []){       
+        //Extrae las variables del array
+        extract($data);
         require "templates/$template.php";
     }
 
